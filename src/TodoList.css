@@ -1,0 +1,122 @@
+/* src/TodoList.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+
+.TodoList {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.AddTask {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.AddTask input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.AddTask button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+
+
+.AddTask button:hover {
+  background-color: #0056b3;
+}
+
+.clearButton {
+  padding: 8px 14px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.clearButton:hover {
+  background-color: #b0313e;
+}
+
+.Task {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+.Task input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.2);
+}
+
+.Task span {
+  flex: 1;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.Task.completed span {
+  color: #999;
+}
+
+.removeButton {
+  margin-left: 12px;
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.removeButton:hover {
+  background-color: #b0313e;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #777;
+}
